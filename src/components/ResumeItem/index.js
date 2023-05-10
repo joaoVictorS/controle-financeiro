@@ -1,4 +1,5 @@
-import { Container, Header, HeaderTitle, Total } from './styles';
+import { Container, Header, HeaderTitle } from './styles';
+import * as C from './styles';
 
 // eslint-disable-next-line react/prop-types
 function ResumeItem({ title, Icon, value }) {
@@ -8,7 +9,7 @@ function ResumeItem({ title, Icon, value }) {
         <HeaderTitle>{title}</HeaderTitle>
         <Icon />
       </Header>
-      <Total>{value}</Total>
+      <C.Total>{value}</C.Total>
     </Container>
   );
 }

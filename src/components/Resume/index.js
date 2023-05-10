@@ -2,12 +2,12 @@ import { FaRegArrowAltCircleUp, FaRegArrowAltCircleDown, FaDollarSign } from 're
 import ResumeItem from '../ResumeItem';
 import { Container } from './styles';
 
-function Resume() {
+function Resume({ income, expense, total }) {
   return (
     <Container>
-      <ResumeItem title="Entradas" Icon={FaRegArrowAltCircleUp} value="100" />
-      <ResumeItem title="Saídas" Icon={FaRegArrowAltCircleDown} value="100" />
-      <ResumeItem title="Total" Icon={FaDollarSign} value="100" />
+      <ResumeItem title="Entradas" Icon={FaRegArrowAltCircleUp} value={income} />
+      <ResumeItem title="Saídas" Icon={FaRegArrowAltCircleDown} value={expense} />
+      <ResumeItem title="Total" Icon={FaDollarSign} value={total} />
     </Container>
   );
 }
